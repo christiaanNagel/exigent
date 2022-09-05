@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className={styles.heroWrapper}>
             <div className={styles.hero}>
-                <Image src="/home/hero/heroBackground.png" layout="fill" width={1780} height={608} />
+                <Image src="/home/hero/tinted.jpg" layout="fill" />
             </div>
             <div className={styles.heroTextContainer}>
                 <h1>
@@ -14,6 +14,13 @@ const Hero = () => {
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris
                 </p>
+            </div>
+            <div className={styles.heroButtons}>
+                <div className={styles.heroButtonsText}>Lorem Ipsum Dolor Sit</div>
+                <div className={styles.heroButtonsTextGroup}>
+                    <button className={styles.pinkButton}>Button One</button>
+                    <button className={styles.blackButton}>Button Two</button>
+                </div>
             </div>
         </div>
     );

@@ -6,8 +6,8 @@ const DestinationCard = ({ image, title, content, icon, icon2, icon3, link }) =>
     return (
         <div className={styles.DestinationCardContainer}>
             <Image src={image} layout="responsive" objectFit="contain" width={300} height={300} />
-            <h2>{title}</h2>
-            <p>{content}</p>
+            <h2 className={styles.cardTitle}>{title}</h2>
+            <p className={styles.cardContent}>{content}</p>
             <div className={styles.bottomDestinationCard}>
                 <div className={styles.bottomDestinationCard}>
                     <div className={styles.iconBottom}>
