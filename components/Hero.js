@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className={styles.heroWrapper}>
             <div className={styles.hero}>
-                <Image src="/home/hero/tinted.jpg" layout="fill" />
+                <Image src="/home/hero/tinted.jpg" layout="fill" objectFit="stretch" />
             </div>
             <div className={styles.heroTextContainer}>
                 <h1>
