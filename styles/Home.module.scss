@@ -110,6 +110,7 @@ $breakpoint-desktop: 1240px;
   padding: 1rem;
   border-radius: 10px;
   justify-self: center;
+  margin: 1rem 0;
 
   .heroButtonsText {
     display: flex;
@@ -297,6 +298,9 @@ $breakpoint-desktop: 1240px;
     width:40%;
     justify-content: space-between;
   }
+  .heroTextContainer{
+    width:50%;
+  }
 }
 
 
@@ -383,6 +387,7 @@ $breakpoint-desktop: 1240px;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 8rem 0;
 
 }
 
