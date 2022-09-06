@@ -11,18 +11,26 @@ const Tabs = () => {
         <div className={styles.tabsContainer}>
             <h1>Section Heading Here</h1>
             <ul className={styles.tabsWrapper}>
-                <li onClick={() => setToggle('tabOne')}>
-                    Active tab
-                </li>
-                <li onClick={() => setToggle('tabTwo')}>
-                    Tab Heading here
-                </li>
-                <li onClick={() => setToggle('tabThree')}>
-                    Tab Heading here
-                </li>
-                <li onClick={() => setToggle('tabFour')}>
-                    Tab Heading here
-                </li>
+                <div>
+                    <li onClick={() => setToggle('tabOne')}>
+                        Active tab
+                    </li>
+                </div>
+                <div>
+                    <li onClick={() => setToggle('tabTwo')}>
+                        Tab Heading here
+                    </li>
+                </div>
+                <div>
+                    <li onClick={() => setToggle('tabThree')}>
+                        Tab Heading here
+                    </li>
+                </div>
+                <div>
+                    <li onClick={() => setToggle('tabFour')}>
+                        Tab Heading here
+                    </li>
+                </div>
             </ul>
             {toggle == "tabOne" &&
                 <div className={styles.DestinationCardWrapper}>
@@ -35,7 +43,7 @@ const Tabs = () => {
                     <DestinationCard image="/home/destinationCards/New Zealand.png" title="Lorem ipsum" content="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." icon="/home/destinationCards/destinationCardIcons.png" icon2="/home/destinationCards/Group 18.png" icon3="/home/destinationCards/Group 19.png" link="" />
                     <DestinationCard image="/home/destinationCards/Bora Bora.png" title="Lorem ipsum" content="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." icon="/home/destinationCards/destinationCardIcons.png" icon2="/home/destinationCards/Group 18.png" icon3="/home/destinationCards/Group 19.png" link="" />
                     <DestinationCard image="/home/destinationCards/London.png" title="Lorem ipsum" content="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." icon="/home/destinationCards/destinationCardIcons.png" icon2="/home/destinationCards/Group 18.png" icon3="/home/destinationCards/Group 19.png" link="" />
-{/*                     <div className={styles.greyDots}>
+                    {/*                     <div className={styles.greyDots}>
                         <Image src="/home/destinationCards/greyDots.png"  objectFit='contain' height={132} width={115} />
                     </div> */}
                 </div>}
