@@ -52,14 +52,16 @@ $breakpoint-desktop: 1240px;
   min-width: 400px;
   justify-items: center;
   padding: 1rem;
+
   ul {
     li {
-      width:vw;
+      width: vw;
       padding: 1rem 0;
+
       &:hover {
         background-color: $color-primary;
         color: white;
-       
+
       }
     }
   }
@@ -92,7 +94,7 @@ $breakpoint-desktop: 1240px;
 
 /*Hero Component*/
 
-.heroTextContainer{
+.heroTextContainer {
   text-align: center;
   padding: 1rem;
 }
@@ -123,7 +125,7 @@ $breakpoint-desktop: 1240px;
     justify-content: flex-end;
     font: normal normal normal 16px/19px Montserrat;
     letter-spacing: 0px;
-    
+
 
 
     .pinkButton {
@@ -183,20 +185,34 @@ $breakpoint-desktop: 1240px;
   }
 }
 
+/*Tabs component*/
+
+.pinkDots {
+  position: absolute;
+  /* margin-left: 10%; */
+  left:0;
+  z-index: -1;
+}
+
+
+
+
 //Group all mobile styling in one place
 @include devices(mobile) {
-  .heroButtons{
-    width:400px;
+  .heroButtons {
+    width: 400px;
     min-width: 400px;
   }
+  
 }
 
 //Group all tablet styling in one place
 @include devices(tablet) {
   .navbarMobile {
     display: none;
-    .heroButtons{
-      width:400px;
+
+    .heroButtons {
+      width: 400px;
     }
   }
 
@@ -249,13 +265,24 @@ $breakpoint-desktop: 1240px;
     min-width: 104px;
   }
 
+
+  .pinkDots {
+    position: absolute;
+    /* margin-left: 10%; */
+    left:0;
+    z-index: -1;
+  }
+  
+
+
 }
 
 //Group all laptop styling in one place
 @include devices(laptop) {
-  .heroButtons{
-    width:400px;
+  .heroButtons {
+    width: 400px;
   }
+
   .heroTextContainer {
     z-index: 50;
     position: relative;
@@ -263,7 +290,7 @@ $breakpoint-desktop: 1240px;
     justify-items: center;
     display: flex;
     flex-direction: column;
-  
+
     h1 {
       font-family: "Montserrat";
       font-size: 3.125rem;
@@ -271,7 +298,7 @@ $breakpoint-desktop: 1240px;
       text-transform: uppercase;
       color: white;
     }
-  
+
     p {
       font-family: "Montserrat";
       font-size: 1.375rem;
@@ -283,9 +310,22 @@ $breakpoint-desktop: 1240px;
     }
 
   }
-  .heroButtonsText{
+
+  .heroButtonsText {
     margin-bottom: 0rem;
   }
+
+
+.pinkDots {
+  position: absolute;
+  /* margin-left: 10%; */
+  left:0;
+  z-index: -1;
+}
+
+
+
+
 }
 
 //Group all desktop devices in one place
@@ -293,14 +333,18 @@ $breakpoint-desktop: 1240px;
   .navbarMobile {
     display: none;
   }
+
   .heroButtons {
     flex-direction: row;
-    width:40%;
+    width: 40%;
     justify-content: space-between;
   }
-  .heroTextContainer{
-    width:50%;
+
+  .heroTextContainer {
+    width: 50%;
   }
+
+
 }
 
 
@@ -402,6 +446,7 @@ $breakpoint-desktop: 1240px;
   max-width: 292px;
   box-shadow: 2px 10px 20px rgba(40, 40, 40, .1);
   min-height: 300px;
+  justify-content: space-around;
 }
 
 .card:hover,
@@ -424,7 +469,7 @@ $breakpoint-desktop: 1240px;
 
 .logo {
   height: 1em;
- 
+
 }
 
 
@@ -481,13 +526,26 @@ $breakpoint-desktop: 1240px;
 
 .cardImageBack {
   background-color: #F0F4FC;
-  width: 52px;
-  height: 48px;
+  width: 103px;
+  height: 97px;
   display: flex;
   justify-content: center;
   align-content: center;
   border-radius: 10%;
   padding: 5%;
+}
+
+.cardH2 {
+  padding-top: 1rem;
+  font: normal normal medium 24px/29px Montserrat;
+  letter-spacing: -0.91px;
+  color: #0F0F0F;
+}
+
+.cardP {
+  font: normal normal normal 16px/19px Montserrat;
+  letter-spacing: -0.61px;
+  color: #0F0F0F;
 }
 
 .footerIcons {
@@ -498,6 +556,9 @@ $breakpoint-desktop: 1240px;
     margin: 0 .5rem 0 .5rem;
   }
 }
+.tabPlaceHolder{
+  margin-top:4rem;
+}
 
 .tabsWrapper {
   display: flex;
@@ -505,9 +566,20 @@ $breakpoint-desktop: 1240px;
   list-style-type: none;
   justify-content: center;
   border-bottom: 1px solid #A7A7A7;
+  font: normal normal normal 26px/32px Montserrat;
+  letter-spacing: -0.99px;
+  color: #000000;
+  width:fit-content;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
 
   li {
     margin: 0 1rem 0 1rem;
+
+    &:active {
+      color: #163235;
+    }
   }
 }
 
@@ -519,6 +591,7 @@ $breakpoint-desktop: 1240px;
 .DestinationCardWrapper {
   display: flex;
   flex-direction: row;
+
 
   .DestinationCard {
     max-width: 1/3;
@@ -544,12 +617,20 @@ $breakpoint-desktop: 1240px;
   padding: 1rem;
   text-align: left;
 
+
+  .cardImage {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .cardTitle {
     font: normal normal 600 38px/47px Montserrat;
     letter-spacing: -1.44px;
     color: #282828;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
 
     h2 {
       padding: 0px;
@@ -560,8 +641,19 @@ $breakpoint-desktop: 1240px;
     font: normal normal normal 18px/22px Montserrat;
     letter-spacing: -0.68px;
     color: #282828;
+    margin-bottom: 1rem;
   }
 
+}
+
+.tabsContainer {
+  h1 {
+    font: normal normal bold 40px/49px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
 }
 
 
@@ -596,16 +688,4 @@ $breakpoint-desktop: 1240px;
       margin: 1rem;
     }
   }
-}
-
-.pinkDots {
-  position: relative;
-  /* margin-left: 10%; */
-  z-index: -1;
-}
-
-.pinkDots {
-  position: relative;
-
-  z-index: -1;
 }

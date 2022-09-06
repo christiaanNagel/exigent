@@ -17,18 +17,18 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="#" className={styles.card}>
             <div className={styles.cardImageBack}>
-              <Image src="/home/cards/rect1.png" objectFit='contain' width={36} height={36} />
+              <Image src="/home/cards/rect1.png" objectFit='contain' width={72} height={72} />
             </div>
-            <h2>H2 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <h2 className={styles.cardH2}>H2 Heading</h2>
+            <p className={styles.cardP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </a>
 
           <a href="#" className={styles.card}>
             <div className={styles.cardImageBack}>
-              <Image src="/home/cards/rect2.png" objectFit='contain' width={36} height={36} />
+              <Image src="/home/cards/rect2.png" objectFit='contain' width={72} height={72} />
             </div>
-            <h2>H2 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <h2 className={styles.cardH2}>H2 Heading</h2>
+            <p className={styles.cardP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </a>
 
           <a
@@ -36,10 +36,10 @@ export default function Home() {
             className={styles.card}
           >
             <div className={styles.cardImageBack}>
-              <Image src="/home/cards/rect3.png" objectFit='contain' width={36} height={36} />
+              <Image src="/home/cards/rect3.png" objectFit='contain' width={72} height={72} />
             </div>
-            <h2>H2 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <h2 className={styles.cardH2}>H2 Heading</h2>
+            <p className={styles.cardP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </a>
 
           <a
@@ -47,12 +47,10 @@ export default function Home() {
             className={styles.card}
           >
             <div className={styles.cardImageBack}>
-              <Image src="/home/cards/rect4.png" objectFit='contain' width={36} height={36} />
+              <Image src="/home/cards/rect4.png" objectFit='contain' width={144} height={144} />
             </div>
-            <h2>H2 Heading</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-            </p>
+            <h2 className={styles.cardH2}>H2 Heading</h2>
+            <p className={styles.cardP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </a>
         </div>
         <Tabs />

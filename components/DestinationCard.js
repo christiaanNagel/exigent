@@ -5,7 +5,9 @@ import styles from '../styles/Home.module.scss'
 const DestinationCard = ({ image, title, content, icon, icon2, icon3, link }) => {
     return (
         <div className={styles.DestinationCardContainer}>
-            <Image src={image} layout="responsive" objectFit="contain" width={300} height={300} />
+            <div className={styles.cardImage}>
+                <Image src={image} layout="responsive" objectFit="contain" width={300} height={300} />
+            </div>
             <h2 className={styles.cardTitle}>{title}</h2>
             <p className={styles.cardContent}>{content}</p>
             <div className={styles.bottomDestinationCard}>
