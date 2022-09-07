@@ -222,7 +222,7 @@ $breakpoint-desktop: 1240px;
   justify-items: space;
   align-items: flex-end;
   margin: auto;
-  padding:0rem;
+  padding:0 0.25rem;
   align-content: space-between;
 
   li:hover {
@@ -381,6 +381,13 @@ $breakpoint-desktop: 1240px;
     z-index: -1;
   }
 
+  .greyDots {
+    position: absolute;
+    /* margin-left: 10%; */
+    right: 0;
+    z-index: -1;
+  }
+
 
 
 
@@ -436,7 +443,7 @@ $breakpoint-desktop: 1240px;
   align-items: center;
   background: #EFEFEF 0% 0% no-repeat padding-box;
   border-radius: 10px;
-  margin: 2rem;
+  margin: 4rem 2rem 2rem 2rem;
   font-family: 'Montserrat';
 }
 
