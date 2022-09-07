@@ -45,6 +45,7 @@ $breakpoint-desktop: 1240px;
 /*Navigation Component*/
 .navbar {
   display: none;
+
 }
 
 .navbarMobile {
@@ -105,7 +106,7 @@ $breakpoint-desktop: 1240px;
   justify-items: center;
   align-items: center;
   background-color: white;
-  width: 300px;
+  width: 280px;
   font: normal normal normal 18px/22px Montserrat;
   letter-spacing: -0.76px;
   min-height: 3rem;
@@ -139,17 +140,26 @@ $breakpoint-desktop: 1240px;
       height: 50px;
       letter-spacing: 0px;
       margin-right: .5rem;
+      &:hover{
+        background-color: $color-primary;
+        color:white;
+      }
     }
 
     .blackButton {
       border: 1px solid white;
-      color: white;
+      color: #efefef;
       border-radius: 10px;
       background-color: black;
       width: 120px;
       height: 50px;
       letter-spacing: 0px;
       margin-left: .5rem;
+      &:hover{
+        background-color: #efefef;
+        color: #000000;
+        border: 1px solid black;
+      }
     }
 
   }
@@ -171,7 +181,7 @@ $breakpoint-desktop: 1240px;
 
   h1 {
     font-family: "Montserrat";
-    font-size: 2.225rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -210,7 +220,7 @@ $breakpoint-desktop: 1240px;
   color: #000000;
   width: fit-content;
   justify-items: space;
-  align-items: center;
+  align-items: flex-end;
   margin: auto;
   padding:0rem;
   align-content: space-between;
@@ -235,8 +245,8 @@ $breakpoint-desktop: 1240px;
 //Group all mobile styling in one place
 @include devices(mobile) {
   .heroButtons {
-    width: 400px;
-    min-width: 400px;
+    width: 280px;
+    min-width: 280px;
     font: normal normal normal 20px/24px Montserrat;
   }
 
@@ -248,7 +258,7 @@ $breakpoint-desktop: 1240px;
     display: none;
 
     .heroButtons {
-      width: 400px;
+      width: 280px;
     }
 
     .tabsWrapper {
@@ -261,24 +271,32 @@ $breakpoint-desktop: 1240px;
     flex-direction: row;
     width: 100%;
     padding: 0 2rem 0 2rem;
+    align-content: space-between;
     align-items: center;
     font-family: "Montserrat";
     font-size: 1rem;
     font-weight: 400;
     min-height: 51px;
     padding: 1.5rem 2rem;
+    button{
+      justify-self: flex-end;
+      align-self: flex-end;
+      margin: auto;
+    }
   }
 
   .navbarMenu {
     display: flex;
     flex-direction: row;
     width: 47%;
+    justify-self: flex-end;
     justify-content: flex-end;
     justify-content: space-around;
     list-style-type: none;
     color: $font-color;
     font: normal normal normal 16px/19px Montserrat;
     letter-spacing: -0.61px;
+
   }
 
 
@@ -320,7 +338,7 @@ $breakpoint-desktop: 1240px;
 //Group all laptop styling in one place
 @include devices(laptop) {
   .heroButtons {
-    width: 400px;
+    width: 300px;
   }
 
   .heroTextContainer {
@@ -513,7 +531,7 @@ $breakpoint-desktop: 1240px;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 712px) {
   .grid {
     width: 100%;
     max-width: 100%;
